@@ -10,7 +10,7 @@ class Home_screen extends StatelessWidget {
         leading: Icon(Icons.android),
         title: Text('MY APP'),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 4, 0, 10),
       ),
       body: Center(
         child: Text('Hola Mundillo'),
