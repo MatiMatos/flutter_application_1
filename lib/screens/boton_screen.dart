@@ -18,7 +18,7 @@ class _botonScreenState extends State<botonScreen> {
           padding: EdgeInsets.all(10.0),
           child: Text(
             'Valores: $_numero',
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 50),
           ),
         ),
         Row(
