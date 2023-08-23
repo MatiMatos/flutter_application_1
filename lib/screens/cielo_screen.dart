@@ -17,11 +17,15 @@ class _CieloScreenState extends State<CieloScreen> {
       ),
       body: Center(
         child: Container(
-          height: 600,
+          height: 650,
           child: ListView(
-            scrollDirection: Axis.horizontal,
+            scrollDirection: Axis.vertical,
             children: [
-              Cielos(imagen: 'pose', nombre: 'Playa Bonita', precio: 'Lukita')
+              Cielos(imagen: 'mario.png', nombre: 'Mario Bross', precio: '55.000'),
+              Cielos(imagen: 'luigi.png', nombre: 'Luigi Bross', precio: '45.000'),
+              Cielos(imagen: 'toad.png', nombre: 'Toad', precio: '35.000'),
+              Cielos(imagen: 'yoshi.png', nombre: 'Yoshi Bross', precio: '45.000'),
+              Cielos(imagen: 'bowser.png', nombre: 'Bowser Bross', precio: '45.000')
             ],
           ),
         ),
