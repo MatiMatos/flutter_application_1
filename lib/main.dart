@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/archivos_screen.dart';
 import 'package:flutter_application_1/screens/boton_screen.dart';
 import 'package:flutter_application_1/screens/cielo_screen.dart';
+import 'package:flutter_application_1/screens/configuracion_screen.dart';
 import 'package:flutter_application_1/screens/home_screen.dart';
 import 'package:flutter_application_1/screens/listas_screen.dart';
+import 'package:flutter_application_1/screens/personas_screen.dart';
+import 'package:flutter_application_1/screens/tarjetas_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +21,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: CieloScreen(),
+      routes: {
+        '/': (context) => ListasScreen(),
+        '/archivos': (context) => ArchivoScreen(),
+        '/personas': (context) => PersonasScreen(),
+        '/tarjetas': (context) => TarjetasScreen(),
+        '/configuracion': (context) => ConfiguracionScreen(),
+      },
+      initialRoute: '/',
     );
   }
 }

@@ -24,7 +24,8 @@ class _ListasScreenState extends State<ListasScreen> {
             subtitle: Text('Archivos de muchas cosas'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              print('Descargas');
+              //print('Descargas');
+              Navigator.pushNamed(context, '/archivos');
             },
           ),
           Divider(
@@ -38,7 +39,8 @@ class _ListasScreenState extends State<ListasScreen> {
             subtitle: Text('Agenda de personas'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              print('Personas');
+              //print('Personas');
+              Navigator.pushNamed(context, '/personas');
             },
           ),
           Divider(
@@ -55,7 +57,8 @@ class _ListasScreenState extends State<ListasScreen> {
             subtitle: Text('Administrador de tarjetas'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              print('Tarjetas');
+              //print('Tarjetas');
+              Navigator.pushNamed(context, '/tarjetas');
             },
           ),
           Divider(
@@ -68,7 +71,8 @@ class _ListasScreenState extends State<ListasScreen> {
             subtitle: Text('Configuracion de la App'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              print('Configuracion');
+              //print('Configuracion');
+              Navigator.pushNamed(context, '/configuracion');
             },
           ),
           Divider(
